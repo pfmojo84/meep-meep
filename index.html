@@ -9,8 +9,140 @@
 </head>
 <body>
 
-    <div id="header">
-    <h1></h1>
+    <nav class="navbar has-background-warning-light is-white has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item ml-4 mt-4 mb-4">
+                <img src="./Images/pngtree-roadrunner-stands-on-the-side-of-a-road-in-the-desert-image_2902342.jpg" alt="Meep Logo" style="max-height: 200px">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item">Memberships</a>
+                <a class="navbar-item">Stores</a>
+                <a class="navbar-item">My Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-small has-background-primary-light is-italic">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title is-size-1">
+                    MEEP
+                </p>
+                <p class="subtitle is-size-2">
+                    Your Wallet, Your World
+                </p>
+                </div>
+                <div class="container has-text-centered pt-3">
+                    <img src="./Images/20230619_115951.jpg" alt="Georgia's Vision" style="max-height: 300px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section has-text-center has-background-warning-light">
+        <h1 class="title has-text-centered has-text-weight-bold">Welcome to the Meep Revolution</h1>
+        <h2 class="subtitle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Fugit omnis cum pariatur dolor quos rerum totam consequuntur eius laborum enim, aut cupiditate, 
+            voluptas ullam aliquid neque, doloribus amet hic molestias. 
+        </h2>
+    </section>
+     
+    <nav class="level has-background-primary-light pb-4">
+        <p class="level-item has-text-centered">
+          <button class="button mt-5" id="enroll">Enroll Your Memberships</button>  
+        </p>
+        <p class="level-item has-text-centered">
+            <button class="button mt-5">Add Your Stores</button>
+        </p>  
+        <p class="level-item has-text-centered">
+            <button class="button mt-5">Invite a Friend!</button>
+        </p>  
+    </nav>
+<!-- Enroll Modal -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+            <h3 class="title mb-6">Enroll Your Memberships Today</h3>
+            <form> 
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Store Name</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Membership ID Number</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            I Agree to the <a href="">Terms & Conditions</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-6 has-text-centered">
+                    <button class="button is-warning">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+ <!--   
+</head>
+<body> -->
+    
+    <style>
+        #map{
+            height:400px;
+            width: 400px;
+        }
+    </style>
+    <div id="map"></div>    
+   
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+          key: "AIzaSyBs6opKdHkjDQXPwNlIYgeNpQj8RXDXypA",
+          v: "weekly",
+        });
+      </script>
+      <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs6opKdHkjDQXPwNlIYgeNpQj8RXDXypA&loading=async&libraries=places">
+  </script>
+    <script src="Assets/script.js"></script>
+
+    <script src="./Assets/style.js"></script>
+ <!--   
+</body>
+</html> -->
+
+
+
+</body>
+ <!--
     <nav id="nav">
         <ul id="list">
             <li id="list1">About Us</li>
@@ -26,36 +158,5 @@
         </div>
     </main>
 
-=======
+-->
     
-    
-    
-    
-</head>
-<body>
-    
-    <style>
-        #map{
-            height:400px;
-            width: 400px;
-        }
-    </style>
-    <div id="map"></div>
-    
-
-    
-    
-
-    
-    <script>
-        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-          key: "AIzaSyBs6opKdHkjDQXPwNlIYgeNpQj8RXDXypA",
-          v: "weekly",
-        });
-      </script>
-      <script async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs6opKdHkjDQXPwNlIYgeNpQj8RXDXypA&loading=async&libraries=places">
-  </script>
-    <script src="Assets/script.js"></script>
-</body>
-</html>
