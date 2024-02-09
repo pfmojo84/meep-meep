@@ -1,3 +1,11 @@
+//burger active onclick
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+  navbarMenu.classList.toggle('is-active');
+});
+
 //modal
 const signUpButton = document.querySelector('#enroll');
 const modalBg = document.querySelector('.modal-background');
