@@ -3,71 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MEEP Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./Meep copy/Assets/style.css">
+    <script src="https://kit.fontawesome.com/aba4fc8e64.js"></script>
 
 </head>
 <body>
-
-    <nav class="navbar has-background-warning-light is-white has-shadow">
+<!--NavBar-->
+    <nav class="navbar has-background-light is-white has-shadow is-spaced">
         <div class="navbar-brand">
-            <a class="navbar-item ml-4 mt-4 mb-4">
-                <img src="./Images/pngtree-roadrunner-stands-on-the-side-of-a-road-in-the-desert-image_2902342.jpg" alt="Meep Logo" style="max-height: 200px">
+            <a class="navbar-item">
+                <img src="./Images/MeepOne.png" alt="Meep Logo" style="max-height: 150px">
             </a>
+            <div class="navbar-item title is-1 px-3 is-italic has-text-danger">MEEP</div>
             <a class="navbar-burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </div>
-        <div class="navbar-menu" id="nav-links">
+        <div class="navbar-menu has-background-light" id="nav-links">
             <div class="navbar-end">
-                <a class="navbar-item">Memberships</a>
-                <a class="navbar-item">Stores</a>
-                <a class="navbar-item">My Account</a>
+                <a class="navbar-item has-text-danger">Memberships</a>
+                <a class="navbar-item has-text-danger">Stores</a>
+                <a class="navbar-item has-text-danger">My Account</a>
             </div>
         </div>
     </nav>
 
-    <section class="hero is-small has-background-primary-light is-italic">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <p class="title is-size-1">
-                    MEEP
-                </p>
-                <p class="subtitle is-size-2">
-                    Your Wallet, Your World
-                </p>
-                </div>
-                <div class="container has-text-centered pt-3">
-                    <img src="./Images/20230619_115951.jpg" alt="Georgia's Vision" style="max-height: 300px">
-                </div>
+<!--Hero Section-->
+  <section class="hero is-medium" style= "background-image: url('./Images/alex-shutin-XsC0GHXi-8k-unsplash.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-body">
+        <div class="container">
+          <h1 class="has-mw-5xl mx-auto mt-8 mb-8 mb-12-desktop title is-1 is-size-2-mobile has-text-white has-text-weight-bold">Welcome to the <span class="has-text-danger"><br>MEEP</span> Revolution</h1>
+          <p class="has-mw-3xl mx-auto mb-8 mb-12-desktop is-size-2 has-text-white has-text-weight-bold subtitle">You World, Your Wallet</p>
+          <p class="level-item has-text-centered">
+            <button class="button is-large mt-6 is-danger is-inverted is-uppercase has-text-weight-semibold mb-6" id="enroll">Enroll Today</button>  
+          </p>
+       </div>
+       <div class="container has-text-danger mt-6">
+          <div class="columns is-hidden-mobile">
+            <div class="column">
+              <i class="fa-solid fa-gift fa-5x"></i>
             </div>
+            <div class="column">
+              <i class="fa-solid fa-cart-shopping fa-5x"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-shop fa-5x"></i>
+            </div>
+          </div> 
         </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section has-text-center has-background-warning-light">
-        <h1 class="title has-text-centered has-text-weight-bold">Welcome to the Meep Revolution</h1>
-        <h2 class="subtitle">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Fugit omnis cum pariatur dolor quos rerum totam consequuntur eius laborum enim, aut cupiditate, 
-            voluptas ullam aliquid neque, doloribus amet hic molestias. 
-        </h2>
-    </section>
-     
-    <nav class="level has-background-primary-light pb-4">
-        <p class="level-item has-text-centered">
-          <button class="button mt-5" id="enroll">Enroll Your Memberships</button>  
-        </p>
-        <p class="level-item has-text-centered">
-            <button class="button mt-5">Add Your Stores</button>
-        </p>  
-        <p class="level-item has-text-centered">
-            <button class="button mt-5">Invite a Friend!</button>
-        </p>  
-    </nav>
+  <!--About Me and Invite Tags-->
+<section class="section pt-4 has-background-light">
+  <div class="tabs is-boxed is-fullwidth is-large has-background-link-light">
+    <ul>
+      <li class="is-active" data-target="meep-details">
+        <a class="has-text-dark">What is MEEP all About?</a>
+      </li>
+      <li data-target="invite-information">
+        <a class="has-text-dark">Invite a Friend</a>
+      </li>
+    </ul>
+  </div>
+  <div class="px-2" id="tab-content">
+    <div id="meep-details">
+      <h3 class="is-size-5 title has-text-centered pb-3 pt-3">Meep is so many things to so many different people...</h3>
+        <div class="columns">
+          <div class="column">
+            <p class="has-text-justified">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, optio corrupti sit quo non dolorum! Quas blanditiis, voluptatem quae eum sequi, 
+              libero alias ut sunt adipisci officia eveniet. Ipsa cupiditate illo sequi beatae, explicabo rerum porro 
+              temporibus consectetur voluptatibus aliquam hic voluptate adipisci officia vero at, 
+              sed assumenda repellendus odio! Animi nostrum vitae, amet blanditiis quis non. Facilis, rem incidunt. 
+            </p>
+          </div>
+          <div class="column">
+            <figure>
+              <img src="./Images/isaac-owens-82Rz8JFbBbc-unsplash.jpg" alt="pharmacy shopping">
+            </figure>
+          </div>
+        </div>
+        </div>
+          <div id="invite-information" class="is-hidden">
+            <h3 class="is-size-5 title has-text-centered pb-3 pt-3">Shopping is more fun with friends!</h3>
+              <div class="columns">
+                <div class="column">
+                  <figure>
+                    <img src="./Images/medium-shot-women-clothes-shopping.jpg" alt="shoping with friends">
+                  </figure>
+                </div>
+              <div class="column">
+                  <form>
+                    <div class="field">
+                        <label class="label">Your Name</label>
+                        <input type="text" class="input is-link" placeholder="Enter Name">
+                    </div>
+                    <div class="field">
+                        <label class="label">Friend's Name</label>
+                        <input type="text" class="input is-link" placeholder="Friend Name">
+                    </div>
+                    <div class="field">
+                        <label class="label">Friend's Email</label>
+                        <input type="text" class="input is-link" placeholder="Friend's Email">
+                    </div>
+                    <div class="field">
+                        <label class="label">Reach out and MEEP someone!</label>
+                        <p class="control">
+                            <textarea class="textarea is-link" placeholder="Text area"></textarea>
+                        </p>
+                    </div>
+                    <div class="has-text-centered pt-3">
+                    <button class="button is-large is-link is-outlined">Send an Invite</button>
+                    </div>  
+                </form>
+                </div>
+              </div>
+            </div>
+           
+           </div>
+        </div>
+</section> 
 
-<!--Enroll Modal-->
     <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-content has-background-white py-5 px-5">
@@ -81,12 +141,6 @@
                 </div>
                 <div class="field">
                     <label class="label">Email</label>
-                    <div class="control">
-                        <input type="text" class="input" placeholder="Email">
-                    </div>
-                </div>
-                <div class="field">
-                    <label class="label">Store Name</label>
                     <div class="control">
                         <input type="text" class="input" placeholder="Email">
                     </div>
@@ -111,47 +165,6 @@
             </form>
         </div>
     </div>
-
-    <div id="addStores">
-
-        <h3>Add Membership stores here</h3>
-
-        <div class="field">
-
-            <div>
-
-                <label>
-                    <input id="walmart-id" value="walmart-value" type="checkbox">Walmart
-                </label>
-
-                <label>
-                    <input id="target-id" value="target-value" type="checkbox">Target
-                </label>
-
-            </div>
-
-            <div id="subBtn23">
-                <button type="submit">Submit</button>
-            </div>
-
-            <div id="sub-Btn101">
-
-                <div id="mem-ship">
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
- <!--   
-</head>
-<body> -->
-    
     <style>
         #map{
             height:400px;
@@ -169,13 +182,87 @@
           v: "weekly",
           mapId: "e7ee8484b15ed5af"
         });
-      </script>
-      
+    </script>
+     
+</section>
+<!-- Coming Soon Cards-->
+<section class="section has-background-light" id="services">
+  <div class="container">
+      <div class="has-text-centered">
+          <h2 class="title is-2">Coming Soon From MEEP</h2>
+          <h6 class="subtitle is-6 has-text-grey">
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Eum, cum
+          </h6>
+      </div>
+        <div class="columns pt-6">
+          <div class="column">
+              <div class="card">
+                  <div class="card-content">
+                      <p class="title is-4 has-text-centered">
+                          Yoga Studios and Gyms
+                      </p>
+                      <figure>
+                        <img src="./Images/logan-weaver-lgnwvr-XKhHkbAFyPs-unsplash.jpg" alt="yoga class">
+                      </figure>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-footer-item">Learn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title is-4 has-text-centered">
+                        Bookstores
+                      </p>
+                      <figure>
+                        <img src="./Images/pj-accetturo-XpD6Dkui-yg-unsplash.jpg" alt="bookstore">
+                      </figure>
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-footer-item">Learn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-content">
+                      <p class="title is-4 has-text-centered">
+                        Lifestyle and Leisure
+                      </p>
+                      <figure>
+                        <img src="./Images/dave-photoz-FdTmaUlEr4A-unsplash.jpg" alt="ticket to ride">
+                      </figure>                     
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-footer-item">Learn</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</section>
+</div>
+<!--Footer-->
+<footer class="footer has-background-light">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Meep</strong> was created by our collective subconscious. <br>
+      It is being beemed to you in high definition by Abhu, Harris, Mellisa, and John <br>
+      <a>CC 2024 - UNH Edx Bootcamp</a>
+    </p>
+    
+</footer>
+
     <script src="Assets/script.js"></script>
     <script src="./Assets/style.js"></script>
 
-
-
+    <script src="./Assets/style.js"></script>
 
 </body>
- 
+</html>
+=======
+
+
