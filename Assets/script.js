@@ -43,6 +43,7 @@ var walmart1 = document.querySelector("#walmart-id");
 var target2 = document.querySelector("#target-id");
 
 //create buttons
+var cvs = document.createElement("button");
 var wal = document.createElement("button");
 var tar = document.createElement("button");
 var rA = document.createElement("button");
@@ -62,7 +63,7 @@ var dunkinDonuts;
 var starbucks;
 var aromaJoes;
 var amazon;
-
+var traderJoes;
 
 
 
