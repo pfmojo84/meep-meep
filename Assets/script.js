@@ -137,7 +137,7 @@ function saveStores(anotherOne) {
     if (savedStores.length >= 2) {
         //console.log("at least 2");
         //btn.innerHTML = "FIND YOUR STORES";
-        findStoresBTN.setAttribute("style", "display: visible;")
+        findStoresBTN.setAttribute("style", "display: visible;");
         findStoresBTN.innerHTML = "Choose one of your memberships";
         subBtn101.insertAdjacentElement("afterbegin", findStoresBTN);
 
@@ -221,30 +221,44 @@ async function initMap() {
         )
     }
 
+    //intializing the map
+    //here's our new map object
     map = new google.maps.Map(
-        document.getElementById("map"), { center: somersworth, zoom: 9  }); //where do we put the map on our webpage and what is the map displaying
-
+        //we are centering on the var somersworth, define above, and are choosing a zoom level of 9 our of 25 ( i think it's out of 25)
+        document.getElementById("map"), 
+        { center: somersworth, zoom: 9  } //where do we put the map on our webpage and what is the map displaying
+        ); 
+    
+    //this is intializing the object window.initMap to the function initMap (I think).
     window.initMap = initMap;
 }
 
+//our function that send the search request to the places api
 async function findPlaces(placeSearch) {
     var placeToTarget = placeSearch;
     console.log(placeToTarget);
+    //our Place object that is intialized the library that we load in here
     const { Place } = await google.maps.importLibrary("places");
+    //we do not intialize an object here but do load in the marker
     await google.maps.importLibrary("marker");
 
+    //This is the request that is being sent to the api
     const request = {
         textQuery: placeToTarget,
         fields: ["displayName", "location"],
         maxResultCount: 5,
     }
-
+    //intializing an object to search resualt
+                            //we are searching through the Place object/library with our request as tge argument
     const { places } = await Place.searchByText(request);
 
+    //more intialization and loading libraries
     const { LatLngBounds } = await google.maps.importLibrary("core");
     const bounds = new LatLngBounds();
 
+    //for each request/place we search for (we have our result amount to 5 ) we aplly a marker to that place (therefore 5 markers)
     places.forEach((place) => {
+        //creating the marker, I guess i don't have to create a var here if we dont use it. 
         const markerView = new google.maps.Marker({
             map,
             position: place.location,
@@ -260,6 +274,7 @@ async function findPlaces(placeSearch) {
 
 subBtn23.addEventListener("click", saveStores);
 
+//we have hard coded each button which is not ideal but it works
 wal.addEventListener("click", (x) => {
     var walPlace = "walmart";
     findPlaces(walPlace);
@@ -269,5 +284,6 @@ tar.addEventListener("click", (x) => {
     var tarPlace = "target";
     findPlaces(tarPlace);
 })
+
 initMap();
 
