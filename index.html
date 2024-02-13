@@ -128,7 +128,6 @@
         </div>
 </section> 
 
-<!-- Enroll Modal -->
     <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-content has-background-white py-5 px-5">
@@ -166,9 +165,6 @@
             </form>
         </div>
     </div>
-<!--Temp section for design formatting-->
-<!-- Hold - Map and Add a Store Functionality-->
-<section class="section">
     <style>
         #map{
             height:400px;
@@ -177,19 +173,18 @@
     </style>
     <div id="map"></div>    
    
-    <script>
+    <script name="bootloader">
+        //Boot loader that sets our preferences for the api
+        //our api key is at the bottem as well as our map key
+        //i have no idea what is best practice for where this should go
         (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
           key: "AIzaSyBs6opKdHkjDQXPwNlIYgeNpQj8RXDXypA",
           v: "weekly",
+          mapId: "e7ee8484b15ed5af"
         });
-        </script>
-      <script async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs6opKdHkjDQXPwNlIYgeNpQj8RXDXypA&loading=async&libraries=places">
-  </script>
-  <script src="./Assets/script.js"></script>
-
+    </script>
+     
 </section>
-
 <!-- Coming Soon Cards-->
 <section class="section has-background-light" id="services">
   <div class="container">
@@ -258,14 +253,16 @@
       It is being beemed to you in high definition by Abhu, Harris, Mellisa, and John <br>
       <a>CC 2024 - UNH Edx Bootcamp</a>
     </p>
-
+    
 </footer>
+
+    <script src="Assets/script.js"></script>
+    <script src="./Assets/style.js"></script>
 
     <script src="./Assets/style.js"></script>
 
-
-
-
-
 </body>
 </html>
+=======
+
+
