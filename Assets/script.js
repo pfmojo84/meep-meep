@@ -76,6 +76,26 @@ initMap();
 
 
 
+var submitbtn = document.querySelector("#submitbtn");
 
 
+var store = document.getElementById(store);
+
+
+
+submitbtn.addEventListener("click", function (){
+    console.log(store.value);
+    })
+
+
+crtCard(store);
+
+store.setAttribute("style", "margin: 20px")
+
+function crtCard(x){
+    var divCreate = document.createElement("button");
+    divCreate.textContent = x
+    divCreate.setAttribute("style", "width: 100px; height: 100px;")
+    document.body.appendChild(divCreate);
+}
 
