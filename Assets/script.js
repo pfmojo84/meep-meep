@@ -41,9 +41,33 @@ var subBtn101 = document.getElementById("sub-Btn101");
 //We might want to do stuff with these in css hence query selector
 var walmart1 = document.querySelector("#walmart-id");
 var target2 = document.querySelector("#target-id");
+
 //create buttons
 var wal = document.createElement("button");
 var tar = document.createElement("button");
+var rA = document.createElement("button");
+var menards = document.createElement("button");
+var cosCo = document.createElement("button");
+var wholeFoods = document.createElement("button");
+var oceanStateJobLot = document.createElement("button");
+var bjsWhole = document.createElement("button");
+var hannaford = document.createElement("button");
+var kohls = document.createElement("button");
+var marketBasket;
+var ulta;
+var barnsNoble;
+var shaws;
+var stopAndShop;
+var dunkinDonuts;
+var starbucks;
+var aromaJoes;
+var amazon;
+
+
+
+
+
+
 
 var btn = document.createElement("button");
 //var subMem = subBtn101.insertAdjacentElement("afterend", btn);
@@ -54,7 +78,13 @@ findStoresBTN.setAttribute("style", "display: none;")
 wal.setAttribute("style", "display:none")
 wal.setAttribute("id", "wal-but");
 tar.setAttribute("style", "display:none");
-tar.setAttribute("id", "tar-but");
+tar.setAttribute("id", "cvs-but");
+cvs.setAttribute("style", "display:none");
+cvs.setAttribute("id", "cvs-but");
+rA.setAttribute("style", "display:none")
+rA.setAttribute("id", "riteaid-but")
+
+
 //create a div and intializing var
 var memBut = document.createElement("div");
 //apending elements
