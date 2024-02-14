@@ -32,15 +32,36 @@ console.log("This is a place for growth and learning. Self worth is not defined 
 //form
 //variables intialized to strings that will be use for the request for the place api
 
+
 // intialize map var
 var map;
+
 //intialize multiple var to an ID on the html 
 var memShips = document.getElementById("mem-ship");
 var subBtn23 = document.getElementById("subBtn23");
 var subBtn101 = document.getElementById("sub-Btn101");
-//We might want to do stuff with these in css hence query selector
+
+//vars for the user input
 var walmart1 = document.querySelector("#walmart-id");
 var target2 = document.querySelector("#target-id");
+var rA2 = document.querySelector("#rA2-id");
+var menards4 = document.querySelector("#menards-id");
+var cosCo2 = document.querySelector("#cosCo-id");
+var wholeFoods1 = document.querySelector("#wholeFoods-id");
+var bjsWhole3 = document.querySelector("#bjs-id");
+var hannaford7 = document.querySelector("#hannaford-id");
+var kohls4 = document.querySelector("#kohls-id");
+var marketBasket3 = document.querySelector("#marketBasket-id");
+var ulta5 = document.querySelector("#ulta-id");
+var barnsNoble9 = document.querySelector("#bAndA-id");
+var shaws12 = document.querySelector("#shaws-id");
+var stopAndShop3 = document.querySelector("#stopAndShop-id");
+var dunkinDonuts34 = document.querySelector("#dunkinDonuts-id");
+var starbucks6 = document.querySelector("#starbucks-id");
+var aromaJoes4 = document.querySelector("#ajs-id");
+var amazon5 = document.querySelector("#amazon-id");
+var traderJoes72 = document.querySelector("#traitorJoes-id");
+
 
 //create buttons
 var cvs = document.createElement("button");
@@ -50,24 +71,19 @@ var rA = document.createElement("button");
 var menards = document.createElement("button");
 var cosCo = document.createElement("button");
 var wholeFoods = document.createElement("button");
-var oceanStateJobLot = document.createElement("button");
 var bjsWhole = document.createElement("button");
 var hannaford = document.createElement("button");
 var kohls = document.createElement("button");
-var marketBasket;
-var ulta;
-var barnsNoble;
-var shaws;
-var stopAndShop;
-var dunkinDonuts;
-var starbucks;
-var aromaJoes;
-var amazon;
-var traderJoes;
-
-
-
-
+var marketBasket = document.createElement("button");
+var ulta = document.createElement("button");
+var barnsNoble = document.createElement("button");
+var shaws = document.createElement("button");
+var stopAndShop = document.createElement("button");
+var dunkinDonuts = document.createElement("button");
+var starbucks = document.createElement("button");
+var aromaJoes = document.createElement("button");
+var amazon = document.createElement("button");
+var traderJoes = document.createElement("button");
 
 
 var btn = document.createElement("button");
@@ -76,15 +92,46 @@ var findStoresBTN = document.createElement("h3");
 findStoresBTN.setAttribute("style", "display: none;")
 
 //styling the display as default none and giving ids
-wal.setAttribute("style", "display:none")
+wal.setAttribute("style", "display:none");
 wal.setAttribute("id", "wal-but");
 tar.setAttribute("style", "display:none");
 tar.setAttribute("id", "cvs-but");
 cvs.setAttribute("style", "display:none");
 cvs.setAttribute("id", "cvs-but");
-rA.setAttribute("style", "display:none")
-rA.setAttribute("id", "riteaid-but")
-
+rA.setAttribute("style", "display:none");
+rA.setAttribute("id", "riteaid-but");
+menards.setAttribute("style", "display:none");
+menards.setAttribute("id", "menards-but");
+cosCo.setAttribute("style", "display:none");
+cosCo.setAttribute("id", "cosco-but");
+wholeFoods.setAttribute("style", "display:none");
+wholeFoods.setAttribute("id", "wholeFoods-but");
+bjsWhole.setAttribute("style", "display:none");
+bjsWhole.setAttribute("id", "bjs-but");
+hannaford.setAttribute("style", "display:none");
+hannaford.setAttribute("id", "hannaford-but");
+kohls.setAttribute("style", "display:none");
+kohls.setAttribute("id", "kohls-but");
+marketBasket.setAttribute("style", "display:none");
+marketBasket.setAttribute("id", "marketBasket-but");
+ulta.setAttribute("style", "display:none");
+ulta.setAttribute("id", "ulta-but");
+barnsNoble.setAttribute("style", "display:none");
+barnsNoble.setAttribute("id", "barnsNoble-but");
+shaws.setAttribute("style", "display:none");
+shaws.setAttribute("id", "shaws-but");
+stopAndShop.setAttribute("style", "display:none");
+stopAndShop.setAttribute("id", "stopAndShop-but");
+dunkinDonuts.setAttribute("style", "display:none");
+dunkinDonuts.setAttribute("id", "dunkinDonuts-but");
+starbucks.setAttribute("style", "display:none");
+starbucks.setAttribute("id", "starbucks-but");
+aromaJoes.setAttribute("style", "display:none");
+aromaJoes.setAttribute("id", "ajs-but");
+amazon.setAttribute("style", "display:none");
+amazon.setAttribute("id", "amazon-but");
+traderJoes.setAttribute("style", "display:none");
+traderJoes.setAttribute("id", "tratiorJoes-but");
 
 //create a div and intializing var
 var memBut = document.createElement("div");
@@ -92,6 +139,25 @@ var memBut = document.createElement("div");
 memShips.appendChild(memBut);
 memBut.appendChild(wal);
 memBut.appendChild(tar);
+memBut.appendChild(rA);
+memBut.appendChild(cvs);
+memBut.appendChild(menards);
+memBut.appendChild(wholeFoods);
+memBut.appendChild(cosCo);
+memBut.appendChild(bjsWhole);
+memBut.appendChild(hannaford);
+memBut.appendChild(kohls);
+memBut.appendChild(marketBasket);
+memBut.appendChild(ulta);
+memBut.appendChild(barnsNoble);
+memBut.appendChild(stopAndShop);
+memBut.appendChild(dunkinDonuts);
+memBut.appendChild(shaws);
+memBut.appendChild(starbucks);
+memBut.appendChild(aromaJoes);
+memBut.appendChild(amazon);
+memBut.appendChild(traderJoes);
+
 
 //This saves the user choices to local storage and is the function run when the submit button is pressed
 function saveStores(anotherOne) {
@@ -132,6 +198,161 @@ function saveStores(anotherOne) {
         savedStores.push(anotherOne);
 
     }
+
+    if (rA2.checked === true) {
+        console.log("Rite Aid true");
+        var rAw = "rite aid";
+        anotherOne = rAw;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    
+    if (menards4.checked === true) {
+        console.log("menards true");
+        var menardW = "menards";
+        anotherOne = menardW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (cosCo2.checked === true) {
+        console.log("cosco true");
+        var coscoW = "cosco";
+        anotherOne = coscoW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (wholeFoods1.checked === true) {
+        console.log("whole foods true");
+        var wholeFoodsW = "whole foods";
+        anotherOne = wholeFoodsW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (bjsWhole3.checked === true) {
+        console.log("bjs true");
+        var bjsWholeW = "BJ's wholesale";
+        anotherOne = bjsWholeW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (hannaford7.checked === true) {
+        console.log("hannaford true");
+        var hannafordW = "hannford";
+        anotherOne = hannafordW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (kohls4.checked === true) {
+        console.log("kohls true");
+        var kohlsW = "kohls";
+        anotherOne = kohlsW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (marketBasket3.checked === true) {
+        console.log("market basket true");
+        var marketBasketW = "market basket";
+        anotherOne = marketBasketW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (ulta5.checked === true) {
+        console.log("ulta true");
+        var ultaW = "ulta";
+        anotherOne = ultaW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (barnsNoble9.checked === true) {
+        console.log("barns and noble true");
+        var barnsNobleW = "barns and noble";
+        anotherOne = barnsNobleW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (shaws12.checked === true) {
+        console.log("shaws true");
+        var shawsW = "shaws";
+        anotherOne = shawsW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (stopAndShop3.checked === true) {
+        console.log("stop and shop true");
+        var stopAndShopW = "stop and shop";
+        anotherOne = stopAndShopW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (dunkinDonuts34.checked === true) {
+        console.log("dunkin donuts true");
+        var dunkinDonutsW = "dunkin donuts";
+        anotherOne = dunkinDonutsW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (starbucks6.checked === true) {
+        console.log("starbucks true");
+        var starbucksW = "starbuck";
+        anotherOne = starbucksW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (aromaJoes4.checked === true) {
+        console.log("ajs true");
+        var aromaJoesW = "aroma joes";
+        anotherOne = aromaJoesW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (amazon5.checked === true) {
+        console.log("amazon true");
+        var amazonW = "amazon";
+        anotherOne = amazonW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
+    if (traderJoes72.checked === true) {
+        console.log("tader joes true");
+        var traderJoesW = "trader joes";
+        anotherOne = traderJoesW;
+        console.log(anotherOne);
+        savedStores.push(anotherOne);
+
+    }
+
 
     //There is already an item in the array so it needs to be greater than 2 items in the array when we display the following buttons
     if (savedStores.length >= 2) {
@@ -182,6 +403,127 @@ function loadStores(savedStores) {
             tar.setAttribute("style", "display: visible");
             tar.textContent = "Target";
         }
+
+        if (rA2.checked) {
+            console.log("rite aid was checked");
+            rA.setAttribute("style", "display: visible");
+            rA.textContent = "Rite Aid";
+    
+        }
+
+        if (menards4.checked) {
+            console.log("menards was checked");
+            menards.setAttribute("style", "display: visible");
+            menards.textContent = "Menards";
+    
+        }
+
+        if (cosCo2.checked) {
+            console.log("cosco was checked");
+            cosCo.setAttribute("style", "display: visible");
+            cosCo.textContent = "Cosco"; 
+    
+        }
+
+        if (wholeFoods1.checked) {
+            console.log("whole foods was checked");
+            wholeFoods.setAttribute("style", "display: visible");
+            wholeFoods.textContent = "Whole Foods";
+    
+        }
+
+        if (bjsWhole3.checked) {
+            console.log("Bjs was checked");
+            bjsWhole.setAttribute("style", "display: visible");
+            bjsWhole.textContent = "BJ's";
+    
+        }
+
+        if (hannaford7.checked) {
+            console.log("Hannaford was checked");
+            hannaford.setAttribute("style", "display: visible");
+            hannaford.textContent = "Hannaford";
+    
+        }
+
+        if (kohls4.checked) {
+            console.log("Kohls was checked");
+            kohls.setAttribute("style", "display: visible");
+            kohls.textContent = "Kohls";
+    
+        }
+
+        if (marketBasket3.checked) {
+            console.log("market Basket was checked");
+            marketBasket.setAttribute("style", "display: visible");
+            marketBasket.textContent = "Market Basket";
+    
+        }
+
+        if (ulta5.checked) {
+            console.log("ulta was checked");
+            ulta.setAttribute("style", "display: visible");
+            ulta.textContent = "Ulta";
+    
+        }
+
+        if (barnsNoble9.checked) {
+            console.log("barnsNoble was checked");
+            barnsNoble.setAttribute("style", "display: visible");
+            barnsNoble.textContent = "Barns & Noble";
+    
+        }
+
+        if (shaws12.checked) {
+            console.log("shaws was checked");
+            shaws.setAttribute("style", "display: visible");
+            shaws.textContent = "Shaws";
+    
+        }
+
+        if (stopAndShop3.checked) {
+            console.log("stopAndShop was checked");
+            stopAndShop.setAttribute("style", "display: visible");
+            stopAndShop.textContent = "Stop and Shop"; 
+    
+        }
+
+        if (dunkinDonuts34.checked) {
+            console.log("dunkinDonuts was checked");
+            dunkinDonuts.setAttribute("style", "display: visible");
+            dunkinDonuts.textContent = "Dunkin Donuts";
+    
+        }
+
+        if (starbucks6.checked) {
+            console.log("starbucks was checked");
+            starbucks.setAttribute("style", "display: visible");
+            starbucks.textContent = "Starbucks";
+    
+        }
+
+        if (aromaJoes4.checked) {
+            console.log("aromaJoes was checked");
+            aromaJoes.setAttribute("style", "display: visible");
+            aromaJoes.textContent = "Aroma Joes";
+    
+        }
+
+        if (amazon5.checked) {
+            console.log("amazon was checked");
+            amazon.setAttribute("style", "display: visible");
+            amazon.textContent = "Amazon";
+    
+        }
+
+        if (traderJoes72.checked) {
+            console.log("traderJoes was checked");
+            traderJoes.setAttribute("style", "display: visible");
+            traderJoes.textContent = "Trader Joes";
+    
+        }
+
+
     }
 
 }
@@ -256,9 +598,11 @@ async function findPlaces(placeSearch) {
     const { LatLngBounds } = await google.maps.importLibrary("core");
     const bounds = new LatLngBounds();
 
+    
     //for each request/place we search for (we have our result amount to 5 ) we aplly a marker to that place (therefore 5 markers)
     places.forEach((place) => {
         //creating the marker, I guess i don't have to create a var here if we dont use it. 
+        
         const markerView = new google.maps.Marker({
             map,
             position: place.location,
@@ -276,14 +620,104 @@ subBtn23.addEventListener("click", saveStores);
 
 //we have hard coded each button which is not ideal but it works
 wal.addEventListener("click", (x) => {
-    var walPlace = "walmart";
+    var walPlace = "Walmart";
     findPlaces(walPlace);
-})
+});
 
 tar.addEventListener("click", (x) => {
-    var tarPlace = "target";
+    var tarPlace = "Target";
     findPlaces(tarPlace);
-})
+});
+
+cvs.addEventListener("click", (x) => {
+    var cvsPlace = "CVS";
+    findPlaces(cvsPlace);
+});
+
+rA.addEventListener("click", (x) => {
+    var raPlace = "Rite Aid";
+    findPlaces(raPlace);
+});
+
+menards.addEventListener("click", (x) => {
+    var menPlace = "Menards";
+    findPlaces(menPlace);
+});
+
+cosCo.addEventListener("click", (x) => {
+    var coscoPlace = "Cosco";
+    findPlaces(coscoPlace);
+});
+
+wholeFoods.addEventListener("click", (x) => {
+    var wholeFoodsPlace = "Whole Foods";
+    findPlaces(wholeFoodsPlace);
+});
+
+bjsWhole.addEventListener("click", (x) => {
+    var bjsPlace = "BJs";
+    findPlaces(bjsPlace);
+});
+
+hannaford.addEventListener("click", (x) => {
+    var hanPlace = "Hannaford";
+    findPlaces(hanPlace);
+});
+
+kohls.addEventListener("click", (x) => {
+    var kohlsPlace = "Kohls";
+    findPlaces(kohlsPlace);
+});
+
+marketBasket.addEventListener("click", (x) => {
+    var mbPlace = "Market Basket";
+    findPlaces(mbPlace);
+});
+
+ulta.addEventListener("click", (x) => {
+    var ultaPlace = "Ulta";
+    findPlaces(ultaPlace);
+});
+
+barnsNoble.addEventListener("click", (x) => {
+    var bnPlace = "Barns and Noble";
+    findPlaces(bnPlace);
+});
+
+shaws.addEventListener("click", (x) => {
+    var shawsPlace = "Shaws";
+    findPlaces(shawsPlace);
+});
+
+stopAndShop.addEventListener("click", (x) => {
+    var sASPlace = "Stop and Shop";
+    findPlaces(sASPlace);
+});
+
+dunkinDonuts.addEventListener("click", (x) => {
+    var dunkinPlace = "Dunkin Donuts";
+    findPlaces(dunkinPlace);
+});
+
+starbucks.addEventListener("click", (x) => {
+    var sbPlace = "Starbucks";
+    findPlaces(sbPlace);
+});
+
+aromaJoes.addEventListener("click", (x) => {
+    var ajsPlace = "Aroma Joes";
+    findPlaces(ajsPlace);
+});
+
+amazon.addEventListener("click", (x) => {
+    var amazonPlace = "Amazon";
+    findPlaces(amazonPlace);
+});
+
+traderJoes.addEventListener("click", (x) => {
+    var tjPlace = "Trader Joes";
+    findPlaces(tjPlace);
+});
 
 initMap();
 
