@@ -32,6 +32,7 @@ console.log("This is a place for growth and learning. Self worth is not defined 
 //form
 //variables intialized to strings that will be use for the request for the place api
 
+
 // intialize map var
 var map;
 //intialize multiple var to an ID on the html 
@@ -54,16 +55,16 @@ var oceanStateJobLot = document.createElement("button");
 var bjsWhole = document.createElement("button");
 var hannaford = document.createElement("button");
 var kohls = document.createElement("button");
-var marketBasket;
-var ulta;
-var barnsNoble;
-var shaws;
-var stopAndShop;
-var dunkinDonuts;
-var starbucks;
-var aromaJoes;
-var amazon;
-var traderJoes;
+var marketBasket = document.createElement("button");
+var ulta = document.createElement("button");
+var barnsNoble = document.createElement("button");
+var shaws = document.createElement("button");
+var stopAndShop = document.createElement("button");
+var dunkinDonuts = document.createElement("button");
+var starbucks = document.createElement("button");
+var aromaJoes = document.createElement("button");
+var amazon = document.createElement("button");
+var traderJoes = document.createElement("button");
 
 
 
@@ -82,8 +83,11 @@ tar.setAttribute("style", "display:none");
 tar.setAttribute("id", "cvs-but");
 cvs.setAttribute("style", "display:none");
 cvs.setAttribute("id", "cvs-but");
-rA.setAttribute("style", "display:none")
-rA.setAttribute("id", "riteaid-but")
+rA.setAttribute("style", "display:none");
+rA.setAttribute("id", "riteaid-but");
+menards.setAttribute("style", "display:none");
+menards.setAttribute("id", "riteaid-but");
+
 
 
 //create a div and intializing var
